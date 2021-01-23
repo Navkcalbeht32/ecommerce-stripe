@@ -4,12 +4,34 @@ const drawerWidth = 0;
 
 export default makeStyles((theme) => ({
   appBar: {
+    display: 'flex',
+    flexDirection: 'column',
+    height: 'fit-content',
+    width: '100%',
     boxShadow: 'none',
+    zIndex: '999',
+    position: 'relative',
     borderBottom: '1px solid rgba(0, 0, 0, 0.12)',
     [theme.breakpoints.up('sm')]: {
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: drawerWidth,
     },
+  },
+  toolbar: {
+    display: 'flex',
+    flexDirection: 'column'
+  },
+  topNav: {
+    display: 'flex',
+    alignItems: 'center'
+  },
+  bottomNav: {
+    width: '100%',
+    maxWidth: '800px',
+    margin: '0 auto 14px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between'
   },
   title: {
     flexGrow: 1,
@@ -17,8 +39,8 @@ export default makeStyles((theme) => ({
     display: 'flex',
     textDecoration: 'none',
   },
-  image: {
-    marginRight: '10px',
+  logo: {
+    margin: '40px auto 20px'
   },
   menuButton: {
     marginRight: theme.spacing(2),
