@@ -19,6 +19,7 @@ export default makeStyles(() => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
+    paddingTop: '16px'
   },
   infoContainer: {
     display: 'flex',
