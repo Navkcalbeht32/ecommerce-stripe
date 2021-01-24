@@ -29,7 +29,7 @@ const Navbar = ({ totalItems }) => {
                         <Link to='/'><NavItem title="Accessories" /></Link>
                         <Link to='/'><NavItem title="Safety" /></Link>
                         <Link to='/'><NavItem title="Find Files" /></Link>
-                        {location.pathname === '/' && (
+                        {location.pathname === '/' && (                   
                             <div className={classes.button}>
                             <Link to='/cart'>
                                 <IconButton aria-label="Show Cart Items" color="inherit">
@@ -40,7 +40,6 @@ const Navbar = ({ totalItems }) => {
                             </Link>
                         </div>
                         )}
-                        
                     </div>
                 </Toolbar>
             </AppBar>

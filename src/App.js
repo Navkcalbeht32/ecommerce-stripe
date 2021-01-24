@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { commerce } from './lib/commerce';
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
-import { Products, Navbar, Cart, Hero, Banner, HelpBar } from './components';
+import { Products, Navbar, Cart, Hero, Banner, HelpBar, Checkout } from './components';
 import './App.css';
 import { Grid } from '@material-ui/core';
 
@@ -74,10 +74,13 @@ const App = () => {
                                 handleEmptyCart={handleEmptyCart}
                             />
                         </Route>
+                        <Route exact path='/checkout'>
+                            <Checkout />
+                        </Route>
                     </Switch>
                     
-                    
                 </Grid>
+                
                 
                 
                
